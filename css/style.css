@@ -32,28 +32,28 @@ body{
                          irá ficar dentro da célula*/
     position: relative;
 }
-/*vamos tirar bordas*/
+/*vamos tirar bordas da 1, 2 e 3 celula*/
 .cell:nth-child(1),
 .cell:nth-child(2),
 .cell:nth-child(3){
     border-top:none; 
    
 }
-
+/*vamos tirar bordas da 7, 8 e 9 celula*/
 .cell:nth-child(7),
 .cell:nth-child(8),
 .cell:nth-child(9){
     border-bottom:none; 
    
 }
-
+/*vamos tirar bordas da 1, 4 e 7 celula*/
 .cell:nth-child(1),
 .cell:nth-child(4),
 .cell:nth-child(7){
     border-left:none; 
    
 }
-
+/*vamos tirar bordas da 3, 6 e 9 celula*/
 .cell:nth-child(3),
 .cell:nth-child(6),
 .cell:nth-child(9){
