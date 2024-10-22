@@ -64,3 +64,19 @@ body{
 .winning-message{
     display: none;
 }
+
+/* x */
+.cell.x ::before,
+.cell.x ::after, /* as 2 linhas e pracriar a perninha do x "antes e depois"/*
+
+.board.x.cell: :not(.x):not(.circle):hover::after  /* quero pegar todas as celulas da board x,*/
+/*que nao tenha a classe x e nem a classse circle, e nas celulas que estao vazias */
+.board.x.cell: :not(.x):not(.circle):hover::after/*quero aplicar o hover after e before*/
+.board.x.cell: :not(.x):not(.circle):hover::before {
+    
+    content: ""; /*significa - vazio */
+    height: calc(100px * 0.15);
+    width: calc(100px *  0.9);
+    background:
+    position: absolute;
+}
