@@ -1,0 +1,86 @@
+*{
+    /*chamado RESET - ele vai chamar todos os elementos da nossa pág*/
+box-sizing:border-box;
+margin: 0;
+padding:0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(90deg, rgb(252, 170, 234), rgb(185, 112, 124), rgb(49, 0, 49) 0%,
+    rgb(1, 0, 17) 100%)
+}
+
+.board {    
+    display: grid;
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+    align-content: center;
+    justify-items: center; /*irá alinhar o conteudo da célula "X" e 
+                            a "bolinha"  no centro da célula*/
+    align-items: center;
+    grid-template-columns: repeat(3, auto);
+}
+.cell{
+    width: 100px;
+    height: 100px;
+    border: 2px solid white; /*borda bca*/
+    display: flex;
+    justify-content: center;
+    align-items: center; /*o display, o justify e align é para garantir que o contéudo
+                         irá ficar dentro da célula*/
+    position: relative;
+}
+/*vamos tirar bordas da 1, 2 e 3 celula*/
+.cell:nth-child(1),
+.cell:nth-child(2),
+.cell:nth-child(3){
+    border-top:none; 
+   
+}
+/*vamos tirar bordas da 7, 8 e 9 celula*/
+.cell:nth-child(7),
+.cell:nth-child(8),
+.cell:nth-child(9){
+    border-bottom:none; 
+   
+}
+/*vamos tirar bordas da 1, 4 e 7 celula*/
+.cell:nth-child(1),
+.cell:nth-child(4),
+.cell:nth-child(7){
+    border-left:none; 
+   
+}
+/*vamos tirar bordas da 3, 6 e 9 celula*/
+.cell:nth-child(3),
+.cell:nth-child(6),
+.cell:nth-child(9){
+    border-right:none; 
+   
+}
+/*Mensagem de vitória*/
+.winning-message{
+    display: none;
+}
+
+/* x */
+.cell.x ::before,
+.cell.x ::after, /* as 2 linhas e pracriar a perninha do x "antes e depois"/*
+
+.board.x.cell: :not(.x):not(.circle):hover::after  /* quero pegar todas as celulas da board x,*/
+/*que nao tenha a classe x e nem a classse circle, e nas celulas que estao vazias */
+.board.x.cell: :not(.x):not(.circle):hover::after/*quero aplicar o hover after e before*/
+.board.x.cell: :not(.x):not(.circle):hover::before {
+    
+    content: ""; /*significa - vazio */
+    height: calc(100px * 0.15); /*100px e o tamanho da altura da celula, e 15% do altura da celula*/
+    width: calc(100px *  0.9); /*100px e o tamanho da largura da celula, e 90% do altura da celula*/
+    background: #fdb2df;
+    position: absolute; /* esse position ira fazer com que forme o X normal*/
+    
+} 
+
