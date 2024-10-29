@@ -6,8 +6,10 @@ padding:0;
 }
 
 body{
-    background: linear-gradient(90deg, black, pink, rgb(236, 115, 236) 0%,
-    rgb(21, 0, 48) 100%)
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(90deg, rgb(252, 170, 234), rgb(185, 112, 124), rgb(49, 0, 49) 0%,
+    rgb(1, 0, 17) 100%)
 }
 
 .board {    
@@ -75,8 +77,10 @@ body{
 .board.x.cell: :not(.x):not(.circle):hover::before {
     
     content: ""; /*significa - vazio */
-    height: calc(100px * 0.15);
-    width: calc(100px *  0.9);
-    background:
-    position: absolute;
-}
+    height: calc(100px * 0.15); /*100px e o tamanho da altura da celula, e 15% do altura da celula*/
+    width: calc(100px *  0.9); /*100px e o tamanho da largura da celula, e 90% do altura da celula*/
+    background: #fdb2df;
+    position: absolute; /* esse position ira fazer com que forme o X normal*/
+    
+} 
+
