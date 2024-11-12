@@ -111,7 +111,7 @@ nao ira permitir que seja clicado com mause*/
 
  /* Mensagem de Vitória */
  .winning-message{
-    display: flex;
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
