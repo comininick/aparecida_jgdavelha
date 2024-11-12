@@ -109,7 +109,42 @@ nao ira permitir que seja clicado com mause*/
     cursor: not-allowed;
 }
 
-/*mensagem de vitoria*/
-.winning-message {
-    display: none;
+ /* Mensagem de Vitória */
+ .winning-message{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.8);
+    flex-direction: column;
+ }
+
+ .winning-message-button{
+    font-size: 2.5rem;
+    background-color: rgb(240, 160, 226);
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    margin-top: 16px;
+    color: white;
+}
+ 
+.winning-message-button:hover{ /*efeito de hover qdo passar
+                                o mouse em cima do botao o efeito seja fonte bca
+                                e fundo verde*/
+color: rgb(250, 0, 187);
+background-color:white; }
+
+.winning-message-text{
+    color:white;
+    font-size: 5rem;
+}
+
+.show-winning-message { /*para aparecer a msg de vitoria*/
+    display: flex;
 }
