@@ -8,8 +8,8 @@ padding:0;
 body{
     height: 100vh;
     width: 100vw;
-    background: linear-gradient(90deg, rgb(175, 95, 158), rgb(241, 110, 253), rgb(124, 0, 87) 0%,
-    rgb(20, 238, 220) 100%)
+    background: linear-gradient(90deg, rgb(43, 22, 38), rgb(235, 103, 195), rgb(97, 32, 83) 0%,
+    rgb(216, 0, 187) 100%)
 }
 
 .board {    
@@ -79,7 +79,7 @@ body{
     content: ""; /*significa - vazio */
     height: calc(100px * 0.15); /*100px e o tamanho da altura da celula, e 15% do altura da celula*/
     width: calc(100px *  0.9); /*100px e o tamanho da largura da celula, e 90% do altura da celula*/
-    background: #e96eb8;
+    background: #000000;
     position: absolute; /* esse position ira fazer com que forme o X normal*/
 } 
 
@@ -98,7 +98,7 @@ body{
     content: "";
     height: calc(100px * 0.9);
     width: calc(100px * 0.9);
-    background: rgb(182, 114, 228);
+    background: rgb(1, 241, 221);
     position: absolute;
     border-radius: 50%; /*ira deixar no formato de circulo*/
  }
@@ -125,7 +125,7 @@ nao ira permitir que seja clicado com mause*/
 
  .winning-message-button{
     font-size: 2.5rem;
-    background-color: rgb(240, 160, 226);
+    background-color: rgb(117, 3, 96);
     padding: 10px 15px;
     cursor: pointer;
     border-radius: 5px;
@@ -137,11 +137,11 @@ nao ira permitir que seja clicado com mause*/
 .winning-message-button:hover{ /*efeito de hover qdo passar
                                 o mouse em cima do botao o efeito seja fonte bca
                                 e fundo verde*/
-color: rgb(250, 0, 187);
-background-color:white; }
+color: rgb(243, 242, 243);
+background-color:rgb(100, 3, 92); }
 
 .winning-message-text{
-    color:white;
+    color:rgb(255, 255, 255);
     font-size: 5rem;
 }
 
